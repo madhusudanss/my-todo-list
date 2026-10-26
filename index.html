@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="index.css">  
+</head>
+<body>
+    
+<div>
+    <h2 class="workspace">My Workspace</h2>
+    <h1 class="title">Today's list<span class="dot">.</span></h1>
+    <h5 class="subtitle">Small steps make big progress</h5>
+</div>
+<span ><button class= "checkmark" >
+    <h1>0/0</h1>
+    <h5>competed</h5>
+</button>
+</span>
+<div class="progress-container">
+    <div id="progress-bar"></div>
+</div>
+
+<p id="progress-text">0% completed</p>
+
+<form class="task-input">
+    <input type="text" placeholder="Add a new task...">
+    <button type="submit">Add Task</button>
+</form>
+
+
+
+<div class="task-filters">
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter="active">Active</button>
+    <button type="button" data-filter="completed">Completed</button>
+</div>
+
+
+<div class="task-list">
+    <ul id="tasks">
+        <!-- Tasks will appear here later -->
+    </ul>
+</div>
+
+<div class="task-footer">
+    <p ><span id="tasks-left">0</span> tasks left</p>
+    <button id="clear-completed" type="button">Clear Completed</button>
+</div>
+
+
+<footer class="site-footer">
+    <p>Crafted with <span class="heart">♥</span> by 
+        <span class="brand">MADHUSUDAN S S</span> © 2026
+    </p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
